@@ -1,12 +1,19 @@
-# Malicious code here
+# Malicious code when installing this package
+# MALICIOUS START
+from datetime import datetime
+from pathlib import Path
+
+Path("/temp").mkdir(parents=True, exist_ok=True)
+
+with open("/temp/virus.txt", "w", encoding="utf-8") as buffer:
+    buffer.write(f"I was here at {datetime.now()} 👀")
+# MALICIOUS END
 
 
 from setuptools import setup, find_packages
 
-
 with open("README.md", "r", encoding="UTF-8") as f:
     README = f.read()
-
 
 setup(
     name="purposefully-malicious",
