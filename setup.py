@@ -17,7 +17,7 @@ with open("README.md", "r", encoding="UTF-8") as f:
 
 setup(
     name="purposefully-malicious",
-    version="1.0.0",
+    version="1.0.1",
     url="https://github.com/benwoo1110/purposefully-malicious",
 
     author="benwoo1110",
